@@ -7,7 +7,7 @@ for i in `ls $1`
     if [ -d $1/$i ]
     then echo $i is exe; let di++; echo $i >> directories.txt
     elif [ -x $1/$i ]
-    then echo $i is di; let exe++; echo $i >> executables.txt 
+    then echo $i is di; let exe++; echo $i >> 
     else
     let no_exe++
     fi
